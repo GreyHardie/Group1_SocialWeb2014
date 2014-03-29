@@ -13,8 +13,8 @@ debug = True
 
 #directions to where the data file is stored
 directory = "collected_data/"
-user_file_senti = "sentiment_data_Viola Pinzi.json"
-user_file_lastfm = "lastfm_data_GiPPe.json"
+user_file_senti = "sentiment_data.json"
+user_file_lastfm = "lastfm_data.json"
 
 if (debug): print "Loading user Facebook status sentiment data from JSON file"
 
@@ -146,15 +146,12 @@ wrapper["mood_calender"] = mood_month
 wrapper["playlist"] = happy_playlist
 if (debug): print "Complete"
 
-if (debug): print "\nWriting data to file: {0}/Mood_results_{1}.json\n".format(directory, fb_id)
+if (debug): print "\nWriting data to file: {0}/Mood_results.json\n".format(directory)
 #check if directory exists if not then make it
 if not os.path.exists(directory):
     os.makedirs(directory)
-
-with open('{0}/Mood_results_{1}.json'.format(directory,fb_id), 'w') as outfile:
-    json.dump(wrapper, outfile, indent = 4)
     
-with open('{0}/Mood_results.json'.format(directory,fb_id), 'w') as outfile:
+with open('{0}/Mood_results.json'.format(directory), 'w') as outfile:
     json.dump(wrapper, outfile, indent = 4)
     
 if (debug): print "Finished!" 

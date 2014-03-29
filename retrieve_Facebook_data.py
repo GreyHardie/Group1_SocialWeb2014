@@ -88,13 +88,13 @@ if (debug): print "Complete! Retrieved {0} friend updates from {1} friends\n".fo
 #directory name to store the user data in
 directory = 'collected_data'
 
-if (debug): print "Writing data to file: "+'{0}/facebook_data_{1}.json'.format(directory,user_data["name"])
+if (debug): print "Writing data to file: "+'{0}/facebook_data.json'.format(directory)
 
 #check if directory exists if not then make it
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-with open('{0}/facebook_data_{1}.json'.format(directory,user_data["name"]), 'w') as outfile:
+with open('{0}/facebook_data.json'.format(directory), 'w') as outfile:
     json.dump(user_data, outfile, indent = 4)
     
 if (debug): print "Finished!" 

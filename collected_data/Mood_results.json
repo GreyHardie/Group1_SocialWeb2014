@@ -1,0 +1,335 @@
+{
+    "playlist": {
+        "Machinedrum - Eyesdontlie - Sherwood & Pinch Clash Machinedrum Dub Fi Dub, Downtown, Uptown and All Around Town Remix": 1, 
+        "Nick Cave - Jubilee Street": 1, 
+        "Sophie - BIPP": 1, 
+        "Romare - Your Love (You Give Me Fever)": 1, 
+        "Boards of Canada - Reach for the Dead": 1, 
+        "Ramadanman - Tempest": 1, 
+        "Machinedrum - Back Seat Ho - Rustie Remix": 1, 
+        "Tessela - Hackney Parrot": 1, 
+        "Sun Ra - Portrait of the Living Sky": 1, 
+        "Kelela - Bank Head (Prod. Kingdom) - Extended": 1, 
+        "Murcof - The Call of Circe": 2, 
+        "Arcade Fire - Reflektor": 1, 
+        "Sun Ra - Advice To Medics": 1, 
+        "Sun Ra - Super Blonde": 1, 
+        "Sun Ra - Sunology": 1, 
+        "Grumbling Fur - Protogenesis": 1, 
+        "Plastikman - Spastik (Dubfire Rework)": 1, 
+        "Pantha du Prince - Lay in a Shimmer": 1, 
+        "Machinedrum - Neujack": 1, 
+        "Sun Ra - Sunology, part II": 1
+    }, 
+    "mood_calender": [
+        {
+            "date": "03/29/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/28/14", 
+            "tracks": {
+                "Murcof - The Call of Circe": 1
+            }, 
+            "mood": 0.9980952380952381
+        }, 
+        {
+            "date": "03/27/14", 
+            "tracks": {
+                "Machinedrum - Eyesdontlie - Sherwood & Pinch Clash Machinedrum Dub Fi Dub, Downtown, Uptown and All Around Town Remix": 1, 
+                "Plastikman - Spastik (Dubfire Rework)": 2, 
+                "Machinedrum - Neujack": 1, 
+                "Machinedrum - Back Seat Ho - Rustie Remix": 1, 
+                "Machinedrum - On My Mind": 1
+            }, 
+            "mood": 0.2781380968880969
+        }, 
+        {
+            "date": "03/26/14", 
+            "tracks": {}, 
+            "mood": 0.6606818181818181
+        }, 
+        {
+            "date": "03/25/14", 
+            "tracks": {
+                "Untold - Strange Dreams": 1, 
+                "Sigha - Rawww": 1, 
+                "Monolake - Ghosts": 1, 
+                "Sigha - Hold Your Heart up to the Light": 2
+            }, 
+            "mood": -0.6392857142857142
+        }, 
+        {
+            "date": "03/24/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/23/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/22/14", 
+            "tracks": {}, 
+            "mood": 0.03222222222222222
+        }, 
+        {
+            "date": "03/21/14", 
+            "tracks": {}, 
+            "mood": 0.5066666666666666
+        }, 
+        {
+            "date": "03/20/14", 
+            "tracks": {
+                "Wolfmother - Where Eagles Have Been": 1, 
+                "Wolfmother - Apple Tree": 1, 
+                "Happy Mondays - Kinky Afro": 1, 
+                "Sun Ra - Medicine for a Nightmare": 1, 
+                "Sun Ra - Call For All Demons": 1, 
+                "Sun Ra - Future": 1, 
+                "Sun Ra - Street Named Hell": 1, 
+                "Wolfmother - Joker and the Thief": 1, 
+                "Sun Ra - Brainville": 1, 
+                "Wolfmother - Woman": 1, 
+                "Wolfmother - Colossal": 1, 
+                "Sun Ra - Fall Off The Log": 1, 
+                "Sun Ra - India": 1, 
+                "Sun Ra - Lullaby For Realville": 1, 
+                "Sun Ra - Possession": 1
+            }, 
+            "mood": 0.07976190476190477
+        }, 
+        {
+            "date": "03/19/14", 
+            "tracks": {
+                "Sun Ra - Kingdom Of Not": 1, 
+                "Sun Ra - Soft Talk": 1, 
+                "Romare - Your Love (You Give Me Fever)": 1, 
+                "Atom\u2122 - Ich bin meine Maschine": 1, 
+                "Ramadanman - Tempest": 1, 
+                "Mount Kimbie - Made to Stray": 1, 
+                "Boards of Canada - Reach for the Dead": 1, 
+                "Nick Cave - Jubilee Street": 1, 
+                "Arcade Fire - Reflektor": 1, 
+                "Holden - Renata": 1, 
+                "Sun Ra - Portrait of the Living Sky": 1, 
+                "Sun Ra - El Is A Sound Of Joy": 1, 
+                "Kelela - Bank Head (Prod. Kingdom) - Extended": 1, 
+                "Sun Ra - Blues At Midnight": 1, 
+                "Arctic Monkeys - Do I Wanna Know?": 1, 
+                "Sun Ra - Sunology": 1, 
+                "Sun Ra - Sunology, part II": 1, 
+                "Sun Ra - Super Blonde": 1, 
+                "Sun Ra - Advice To Medics": 1
+            }, 
+            "mood": 0.17727272727272728
+        }, 
+        {
+            "date": "03/18/14", 
+            "tracks": {
+                "Simian Mobile Disco - Sleep Deprivation": 1, 
+                "Piero Umiliani - Le isole dell'amore": 1, 
+                "Tessela - Hackney Parrot": 1, 
+                "Sophie - BIPP": 1, 
+                "Darkstar - Timeaway": 1, 
+                "Grumbling Fur - Protogenesis": 1, 
+                "Pantha du Prince - Lay in a Shimmer": 1, 
+                "Piero Umiliani - Tamour\u00e8 - Titoli": 1
+            }, 
+            "mood": 0.1622222222222222
+        }, 
+        {
+            "date": "03/17/14", 
+            "tracks": {
+                "Booka Shade - Charlotte": 1, 
+                "Lindstr\u00f8m - R\u00e0-\u00e0k\u00f5-st": 1, 
+                "Classixx - I'll Get You (feat. Jeppe)": 1, 
+                "Todd Terje - Swing Star, Pt. 2": 1, 
+                "Todd Terje - Kul I Pul": 1, 
+                "Todd Terje - Inspector Norse": 1, 
+                "Todd Terje - Myggsommer": 1, 
+                "Todd Terje - Swing Star, Pt. 1": 1, 
+                "YACHT - Le Goudron (Long Version)": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/16/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/15/14", 
+            "tracks": {
+                "The Mars Volta - L'Via L'Viaquez": 1, 
+                "Zomby - Fuck Mixing, Let's Dance": 1, 
+                "Tenacious D - Rize of the Fenix": 2, 
+                "The Mars Volta - Drunkship of Lanterns": 1, 
+                "Zomby - U Are My Fantasy - Street Fighter II Theme Remix": 1, 
+                "The Mars Volta - Multiple Spouse Wounds": 1, 
+                "Afterhours - Sui Giovani D'Oggi Ci Scatarro Su": 1, 
+                "Tenacious D - Classico": 1, 
+                "Tenacious D - Fuck Her Gently": 1, 
+                "The Mars Volta - Asilos Magdalena": 1, 
+                "Tenacious D - Roadie": 1, 
+                "The Mars Volta - Sarchophagi": 1, 
+                "Tenacious D - Wonderboy": 1, 
+                "The Mars Volta - Viscera Eyes": 1, 
+                "Tenacious D - Low Hangin' Fruit": 2, 
+                "The Mars Volta - Inertiatic ESP": 1, 
+                "Tenacious D - The Ballad of Hollywood Jack and the Rage Kage": 1, 
+                "Jack Pe\u00f1ate - Have I Been a Fool?": 1, 
+                "Tenacious D - Kickapoo": 1, 
+                "The Mars Volta - Cygnus... Vismund Cygnus": 1, 
+                "Afterhours - Lasciami Leccare L'Adrenalina": 1, 
+                "Tenacious D - Beelzeboss (The Final Showdown)": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/14/14", 
+            "tracks": {
+                "Zomby - Natalia\u2019s Song": 1, 
+                "Grimes - Genesis": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/13/14", 
+            "tracks": {
+                "Kid Simius - Intro": 1, 
+                "Kid Simius - Matador": 1, 
+                "Kid Simius - HOLA CHICA!": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/12/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/11/14", 
+            "tracks": {
+                "Porn Sword Tobacco - 2 windows down": 1, 
+                "Loscil - Charlie": 1, 
+                "Porn Sword Tobacco - En Ny Morgon": 1, 
+                "Porn Sword Tobacco - Havet \u00e4r \u00e4rligt": 1, 
+                "Porn Sword Tobacco - welcome": 1, 
+                "Porn Sword Tobacco - The Lavalife": 1, 
+                "Loscil - Bellows": 1, 
+                "Porn Sword Tobacco - Sj\u00f6bodarna st\u00e5r tomma \u00f6ver jul": 1, 
+                "Porn Sword Tobacco - I Love Riding My Bicycle": 1, 
+                "Porn Sword Tobacco - spectrum campfire": 1, 
+                "Dead Fader - In Cover": 1, 
+                "Loscil - Steam": 1, 
+                "Loscil - Chinook": 1, 
+                "Loscil - Halcyon": 1, 
+                "Porn Sword Tobacco - Thats Roadrageous!": 1, 
+                "Loscil - Zephyr": 1, 
+                "Loscil - Rorschach": 1, 
+                "Loscil - Mistral": 1, 
+                "Dead Fader - Hiphoop": 1, 
+                "Loscil - Motoc": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/10/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/09/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/08/14", 
+            "tracks": {
+                "Perc & Einst\u00fcrzende Neubauten - Lunebest": 1, 
+                "Perc - David & George": 1, 
+                "Perc - A Living End": 1, 
+                "Perc - Horse Gum": 1, 
+                "Afterhours - Come Vorrei": 1, 
+                "Perc - Galloper": 1, 
+                "Perc - Speek": 1, 
+                "Perc - Lurch": 1, 
+                "Perc - Take Your Body Off": 1, 
+                "Perc & Einst\u00fcrzende Neubauten - Liebesdub": 1, 
+                "Perc - Dumpster": 1, 
+                "Perc - Bleeding Colours": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/07/14", 
+            "tracks": {
+                "Kangding Ray - Crystal": 1, 
+                "Kangding Ray - History Of Obscurity": 1, 
+                "Kangding Ray - Apogee": 1, 
+                "Kangding Ray - Transitional Ballistics": 1, 
+                "Perc - Rotting Sound": 1, 
+                "Kangding Ray - Amber Decay": 1, 
+                "Kangding Ray - L'envol": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/06/14", 
+            "tracks": {
+                "Emptyset - Order": 1, 
+                "Emptyset - Lens": 1, 
+                "Kangding Ray - The River (Reprise)": 1, 
+                "Emptyset - Limit": 1, 
+                "Kangding Ray - Serendipity March": 1, 
+                "Kangding Ray - Blank Empire": 1, 
+                "Kangding Ray - Evento": 1, 
+                "Emptyset - Disperse": 1, 
+                "Emptyset - Instant": 1, 
+                "Emptyset - Recur": 1, 
+                "Emptyset - Absence": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/05/14", 
+            "tracks": {
+                "Emptyset - Fragment": 1, 
+                "Emptyset - Origin": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/04/14", 
+            "tracks": {
+                "Nicole Moudaber - Lumie\u0300re Tamise\u0301e": 2, 
+                "Lone - Cloud 909": 1, 
+                "Lone - Airglow Fires": 1
+            }, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/03/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/02/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "03/01/14", 
+            "tracks": {}, 
+            "mood": 0
+        }, 
+        {
+            "date": "02/28/14", 
+            "tracks": {}, 
+            "mood": 0
+        }
+    ]
+}

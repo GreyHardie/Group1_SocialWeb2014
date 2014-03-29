@@ -14,7 +14,7 @@ debug = True
 
 #directions to where the data file is stored
 directory = "collected_data/"
-user_file = "facebook_data_Viola Pinzi.json"
+user_file = "facebook_data.json"
 
 if (debug): print "Loading user facebook data from JSON file"
 
@@ -112,37 +112,43 @@ user_data["clean_f_status_en"] = []
 for status in user_data["f_status_en"]:
     clean = cleanText(status)
     user_data["clean_f_status_en"].append(clean)
-    
-if (debug): print "Removing stopwords..."
+
+#if (debug): print "Removing stopwords..."  
 
 #remove stopwords leaving a feature vector of important words
-user_data["clean_status_en_feature"] = []
-for status in user_data["clean_status_en"]:
-    clean = getFeatureVector(status)
-    user_data["clean_status_en_feature"].append(" ".join(clean))
+#this did not give good results in the sentiment analysis as we stripped away the emoticons and smileys we therefore removed this from the next sections
 
-user_data["clean_f_status_en_feature"] = []
-for status in user_data["clean_f_status_en"]:
-    clean = getFeatureVector(status)
-    user_data["clean_f_status_en_feature"].append(" ".join(clean))
+#user_data["clean_status_en_feature"] = []
+#for status in user_data["clean_status_en"]:
+#    clean = getFeatureVector(status)
+#    user_data["clean_status_en_feature"].append(" ".join(clean))
+#
+#user_data["clean_f_status_en_feature"] = []
+#for status in user_data["clean_f_status_en"]:
+#    clean = getFeatureVector(status)
+#    user_data["clean_f_status_en_feature"].append(" ".join(clean))
     
 if (debug): print "Determining sentiment..."
 
-#get sentiment of feature vectors
-user_data["sentiment_clean_en_feat"] = []
-for status in user_data["clean_status_en_feature"]:
-    blob = TextBlob(status).polarity
-    user_data["sentiment_clean_en_feat"].append(blob)
-    
+#get sentiment
+
+##cleaned feature vector
+#user_data["sentiment_clean_en_feat"] = []
+#for status in user_data["clean_status_en_feature"]:
+#    blob = TextBlob(status).polarity
+#    user_data["sentiment_clean_en_feat"].append(blob)
+#
+#
+#user_data["f_sentiment_clean_en_feat"] = []
+#for status in user_data["clean_f_status_en_feature"]:
+#    blob = TextBlob(status).polarity
+#    user_data["f_sentiment_clean_en_feat"].append(blob)
+
+#cleaned text with stopwords intact
 user_data["sentiment_clean_en"] = []
 for status in user_data["clean_status_en"]:
     blob = TextBlob(status).polarity
     user_data["sentiment_clean_en"].append(blob)
-
-user_data["f_sentiment_clean_en_feat"] = []
-for status in user_data["clean_f_status_en_feature"]:
-    blob = TextBlob(status).polarity
-    user_data["f_sentiment_clean_en_feat"].append(blob)
     
 user_data["f_sentiment_clean_en"] = []
 for status in user_data["clean_f_status_en"]:
@@ -150,13 +156,13 @@ for status in user_data["clean_f_status_en"]:
     user_data["f_sentiment_clean_en"].append(blob)
       
     
-if (debug): print "Writing data to file: "+'{0}/sentiment_data_{1}.json'.format(directory,user_data["name"])
+if (debug): print "Writing data to file: "+'{0}/sentiment_data.json'.format(directory)
 
 #check if directory exists if not then make it
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-with open('{0}/sentiment_data_{1}.json'.format(directory,user_data["name"]), 'w') as outfile:
+with open('{0}/sentiment_data.json'.format(directory), 'w') as outfile:
     json.dump(user_data, outfile, indent = 4)
     
 if (debug): print "Finished!" 

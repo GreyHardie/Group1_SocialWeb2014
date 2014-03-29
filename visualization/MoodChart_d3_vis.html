@@ -1,0 +1,182 @@
+<!DOCTYPE html > <meta charset = "utf-8"> 
+<html > 
+<head > 
+<style >
+    rect.bordered {
+        stroke: # E6E6E6;
+        stroke - width: 1px;
+}
+
+text.mono {
+    font - size: 9pt;
+    font - family: Consolas,
+    courier;
+    fill: # aaa;
+}
+
+text.axis - workweek {
+    fill: #000;
+      }
+
+      text.axis-worktime {
+        fill: # 000;
+} </style>
+<script src="http://d3js.org/d3.v3.js"></script>
+</head>
+  <body>
+    <div id="chart"></div>
+    <script src="http://d3js.org/d3.v3.js"></script>
+<script type = "text/javascript" >
+var data_temp = [
+    ["1", "1", "0"],
+    ["1", "2", "0.162"],
+    ["1", "3", "0.177"],
+    ["1", "4", "0.08"],
+    ["1", "5", "-0.7"],
+    ["1", "6", "0.16"],
+    ["1", "7", "0"],
+    ["2", "1", "0"],
+    ["2", "2", "-0.5"],
+    ["2", "3", "0.52"],
+    ["2", "4", "0.28"],
+    ["2", "5", "0.99"],
+    ["2", "6", "0"],
+    ["2", "7", "0"]
+];
+
+dates = ["17-03-2014","18-03-2014","19-03-2014","20-03-2014","21-03-2014","22-03-2014","23-03-2014","24-03-2014","25-03-2014","26-03-2014","27-03-2014","28-03-2014","29-03-2014","30-03-2014"]
+
+var data = [];
+var max_val = 0;
+var min_val = 0;
+for (var i in data_temp) {
+    var row = {};
+    row.day = +data_temp[i][0];
+    row.hour = +data_temp[i][1];
+    row.value = +data_temp[i][2];
+    max_val = Math.max(max_val, row.value)
+    max_val = Math.min(max_val, row.value)
+    data.push(row);
+};
+
+var margin = {
+    top: 50,
+    right: 0,
+    bottom: 120,
+    left: 80
+},
+    width = 960 - margin.left - margin.right,
+    height = 430 - margin.top - margin.bottom,
+    gridSize = Math.floor(width / 7),
+    legendElementWidth = gridSize / 2,
+    buckets = 9,
+    colors = ["#4575b4", "#74add1", "#abd9e9", "#e0f3f8", "#fee090", "#fdae61", "#f46d43", "#d73027", "#a50026"] // alternatively colorbrewer.YlGnBu[9]
+
+
+    times = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    days = ["Week 1","Week 2"]
+    
+
+
+var colorScale = d3.scale.quantile()
+    .domain([min_val*10, (buckets - 1), max_val*10])
+    .range(colors);
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var dayLabels = svg.selectAll(".dayLabel")
+    .data(days)
+    .enter().append("text")
+    .text(function(d) {
+        return d;
+    })
+    .attr("x", 0)
+    .attr("y", function(d, i) {
+        return i * gridSize;
+    })
+    .style("text-anchor", "end")
+    .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
+    .attr("class", function(d, i) {
+        return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis");
+    });
+
+var timeLabels = svg.selectAll(".timeLabel")
+    .data(times)
+    .enter().append("text")
+    .text(function(d) {
+        return d;
+    })
+    .attr("x", function(d, i) {
+        return i * gridSize;
+    })
+    .attr("y", 0)
+    .style("text-anchor", "middle")
+    .attr("transform", "translate(" + gridSize / 2 + ", -6)")
+    .attr("class", function(d, i) {
+        return ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-worktime" : "timeLabel mono axis");
+    });
+
+var heatMap = svg.selectAll(".hour")
+    .data(data)
+    .enter().append("rect")
+    .attr("x", function(d) {
+        return (d.hour - 1) * gridSize;
+    })
+    .attr("y", function(d) {
+        return (d.day - 1) * gridSize;
+    })
+    .attr("rx", 8)
+    .attr("ry", 8)
+    .attr("class", "hour bordered")
+    .attr("width", gridSize)
+    .attr("height", gridSize)
+    .style("fill", colors[0]);
+
+heatMap.transition().duration(1000)
+    .style("fill", function(d) {
+        return colorScale(d.value*10);
+    });
+
+heatMap.append("title").text(function(d,i) {
+    return "Mood = "+d.value+" \n"+dates[i];
+});
+
+var legend = svg.selectAll(".legend")
+    .data([min_val].concat(colorScale.quantiles()), function(d) {
+        return d;
+    })
+    .enter().append("g")
+    .attr("class", "legend");
+
+legend.append("rect")
+    .attr("x", function(d, i) {
+        return legendElementWidth * i;
+    })
+    .attr("y", height)
+    .attr("rx", 6)
+    .attr("ry", 6)
+    .attr("width", legendElementWidth)
+    .attr("height", gridSize / 2)
+    .style("fill", function(d, i) {
+        return colors[i];
+    });
+
+legend.append("text")
+    .attr("class", "mono")
+    .text(function(d,i) {
+        if (i == 0) {
+            return "Sad"}
+        else if (i == colors.length-1) {return "Happy"}
+        else {return ""} 
+    })
+    .attr("x", function(d, i) {
+        return legendElementWidth * i;
+    })
+    .attr("y", height + legendElementWidth*1.5); 
+
+</script>
+ </body > </html>
