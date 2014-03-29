@@ -16,8 +16,8 @@ API_KEY = "36b0f2c10e283a69776927c6f254a38f" # this is a sample key
 API_SECRET = "db21e9c76bf1cbb460d60329fdaefa11"
 
 # In order to perform a write operation you need to authenticate yourself
-username = "GreyHardie"
-password_hash = "3f08c1696d7ac30a0253682ce7e192f7"
+username = "user_account_name"
+password_hash = "3f08c1696d7ac30a0253682ce7e192f5"
 
 if (debug): print "Creating connection to Last.fm...\n"
 
